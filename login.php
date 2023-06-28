@@ -1,4 +1,3 @@
-
 <?php
 
 $title = "Login - Blogging Website";
@@ -15,7 +14,7 @@ include_once('./common/navbar.php');
 
 <div class="container">
     <div class="row login-main">
-        
+
         <div class="col-md-6 col-lg-5 col-12">
             <div class="card shadow p-4 login-card">
                 <div class="login-card-body">
@@ -23,19 +22,26 @@ include_once('./common/navbar.php');
                     <p>Hey, Enter your details to get sign in to your account.</p>
 
                     <form action="">
-                    <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>
-<div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>
-<a href="">Forgot Password?</a>   
-<input type="submit" value="Login">    
-</form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" placeholder="Email Address" >
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="bi bi-lock-fill"></i>
+                            </span>
+                            <input type="password" class="form-control" placeholder="Password" id="user_password" >
+                            <button class="btn" type="button" onclick="togglePassword('login-password-icon', 'user_password' )" id="button-addon2">
+                                <i class="bi bi-eye-fill" id="login-password-icon"></i>
+                            </button>
+                        </div>
+                        <a href="" class="forgot-password">Forgot Password?</a>
+                        <input type="submit" value="Login" class="login-btn btn btn-primary d-block mx-auto">
+                    </form>
 
-<span>Don't have an account? <a href="">Signup</a> </span>
+                    <span class="page-change">Don't have an account? <a href=""> Signup!</a> </span>
                 </div>
             </div>
         </div>
@@ -52,4 +58,5 @@ include_once('./common/misc.php');
 ?>
 <!-- Custom Javascript -->
 </body>
+
 </html>
