@@ -1,0 +1,2 @@
+# blogs
+ A blogging Platform

@@ -1,0 +1,58 @@
+:root{
+    --theme-color:#2573DA;
+    --background-color:#f1f3f5;
+    --theme-font:'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: var(--theme-font);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar{
+    background-color:white;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.navbar-brand span{
+color: var(--theme-color);
+}
+
+.nav-link{
+    margin: 0 0.5rem;
+}
+
+.login-btn, .login-btn:hover{
+    background-color:var(--theme-color);
+    color:white;
+    padding: 0.5rem 1rem !important;
+    min-width: 10rem;
+    border-radius: 2rem;
+}
+
+
+/*---------------------------------- Login Page --------------------------------*/
+
+.login-main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card{
+    border: none;
+    border-radius: 15px;
+    height: 50vh;
+}
+
+.login-card-body{
+    
+}
