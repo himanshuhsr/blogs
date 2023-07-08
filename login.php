@@ -41,7 +41,7 @@ include_once('./common/navbar.php');
                         <input type="submit" value="Login" class="login-btn btn btn-primary d-block mx-auto">
                     </form>
 
-                    <span class="page-change">Don't have an account? <a href=""> Signup!</a> </span>
+                    <span class="page-change">Don't have an account? <a href="signup.php"> Signup!</a> </span>
                 </div>
             </div>
         </div>
